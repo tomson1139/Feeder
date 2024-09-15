@@ -1,2 +1,3 @@
 # Feeder
 Feeder with Rainmaker app and esp32
+This project is based on Automatic Fish Feeder which I have brought from Amazon and unfortunately the timer got complaint, So I have decided to rebuild it with esp32 and to control the feeder I have using Rainmaker app which is free for both android and ios too. In this, I have using the Limit switch (with in it), added a realy and a push button too. The relay will control the motor to drop the food. Basically the motor will be turned on via application or the push button. When the motor will be turned on and controlled by relay, it will be turned off when the limit switch is triggered. 
