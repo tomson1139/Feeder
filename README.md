@@ -1,7 +1,7 @@
-# ESP RainMaker Switch
+# ESP RainMaker Feeder
 
 This example demonstrates how to build a switch device to be used with ESP RainMaker. 
-I have started with this example code to control the relay, which is controlling the motor. Here I am not using an DC motor controller or any other things to control the motor. Here I have modified the existing feeding system which can be controlled by a push button or using a Rainmaker application. 
+I have started with this example code of switch to control the relay, which is controlling the motor. Here I am not using an DC motor controller or any other things to control the motor. Here I have modified the existing feeding system which can be controlled by a push button or using a Rainmaker application. 
 Additinaly i have added a 5V Realy.
 
 ## Working
