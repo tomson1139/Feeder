@@ -1,3 +1,31 @@
-# Feeder
-Feeder with Rainmaker app and esp32
-This project is based on Automatic Fish Feeder which I have brought from Amazon and unfortunately the timer got complaint, So I have decided to rebuild it with esp32 and to control the feeder I have using Rainmaker app which is free for both android and ios too. In this, I have using the Limit switch (with in it), added a realy and a push button too. The relay will control the motor to drop the food. Basically the motor will be turned on via application or the push button. When the motor will be turned on and controlled by relay, it will be turned off when the limit switch is triggered. 
+# ESP RainMaker Switch
+
+This example demonstrates how to build a switch device to be used with ESP RainMaker.
+
+## What to expect in this example?
+
+- This example sketch uses the on board Boot button and GPIO16 to demonstrate an ESP RainMaker switch device.
+- After compiling and flashing the example, add your device using the [ESP RainMaker phone apps](https://rainmaker.espressif.com/docs/quick-links.html#phone-apps) by scanning the QR code.
+- Toggling the state from the phone app will toggle the switch state (GPIO16).
+- Pressing the Boot button will toggle the switch state (GPIO16) and the same will reflect on the phone app.
+
+### Output
+
+```
+[    63][I][RMaker.cpp:13] event_handler(): RainMaker Initialized.
+[    69][I][WiFiProv.cpp:158] beginProvision(): Already Provisioned
+[    69][I][WiFiProv.cpp:162] beginProvision(): Attempting connect to AP: Viking007_2GEXT
+
+Toggle State to false.
+[  8182][I][RMakerDevice.cpp:162] updateAndReportParam(): Device : Switch, Param Name : Power, Val : false
+Toggle State to true.
+[  9835][I][RMakerDevice.cpp:162] updateAndReportParam(): Device : Switch, Param Name : Power, Val : true
+Received value = false for Switch - Power
+Received value = true for Switch - Power
+Toggle State to false.
+[ 29937][I][RMakerDevice.cpp:162] updateAndReportParam(): Device : Switch, Param Name : Power, Val : false
+```
+
+### Resetting the device
+- Press and Hold the Boot button for more than 3 seconds and then release to reset Wi-Fi configuration.
+- Press and Hold the Boot button for more than 10 seconds and then release to reset to factory defaults.
