@@ -7,9 +7,6 @@ I have modified the default Fish Feeder that I have brought from online. Removed
 - The motor will be controlled by the relay and the relay will be controlled by the Rainmaker Application or the Physical (Push) button attached to it.
 When ever the limit switch got triggered, the relay will be turned off. 
 - When ever the ESP32 powered on, the relay will be turned on automaticalled after 8 mints. By using Rainmaker application we can shedule it or can be controlled by a button (Feeder) preset in the Application.
-
-## What to expect in this example?
-
 - After compiling and flashing the example, add your device using the [ESP RainMaker phone apps](https://rainmaker.espressif.com/docs/quick-links.html#phone-apps) by scanning the QR code.
 
 ## Components
