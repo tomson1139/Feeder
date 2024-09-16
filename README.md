@@ -1,11 +1,10 @@
 # ESP RainMaker Feeder
 
-Started with this basic example code of switch.
-I have modified the default Feeder that I have brought from online. Removed the main board and fixed esp32. Now I can controlled the feeder by Sheduled time or by Rainmaker application. 
+I have modified the default Fish Feeder that I have brought from online. Removed the main board and fixed esp32. Now I can controlled the feeder by Sheduled time or via Rainmaker application. 
 
 ## Working
 
--- The motor will be connected to the relay and the relay will be controlled by the Rainmaker Application or the Physical (Push) button attached to it.
+-- The motor will be controlled by the relay and the relay will be controlled by the Rainmaker Application or the Physical (Push) button attached to it.
 When ever the limit switch got triggered, the relay will be turned off. 
 -- When ever the ESP32 powered on, the relay will be turned on automaticalled after 8 mints. By using Rainmaker application we can shedule it or can be controlled by a button (Feeder) preset in the Application.
 
