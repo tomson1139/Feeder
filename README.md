@@ -1,13 +1,22 @@
 # ESP RainMaker Switch
 
-This example demonstrates how to build a switch device to be used with ESP RainMaker.
+This example demonstrates how to build a switch device to be used with ESP RainMaker. 
+I have started with this example code to control the relay, which is controlling the motor. Here I am not using an DC motor controller or any other things to control the motor. Here I have modified the existing feeding system which can be controlled by a push button or using a Rainmaker application. 
+Additinaly i have added a 5V Realy.
+
+## Working
+
+-- The motor will be connected to the relay and the relay will be controlled by the Rainmaker Application or the Physical (Push) button attached to it.
+When ever the limit switch got triggered, the relay will be turned off. 
+-- When ever the ESP32 powered on, the relay will be turned on automaticalled after 8 mints. By using Rainmaker application we can shedule it or can be controlled by a button (Feeder) preset in the Application.
 
 ## What to expect in this example?
 
-- This example sketch uses the on board Boot button and GPIO16 to demonstrate an ESP RainMaker switch device.
 - After compiling and flashing the example, add your device using the [ESP RainMaker phone apps](https://rainmaker.espressif.com/docs/quick-links.html#phone-apps) by scanning the QR code.
-- Toggling the state from the phone app will toggle the switch state (GPIO16).
-- Pressing the Boot button will toggle the switch state (GPIO16) and the same will reflect on the phone app.
+
+## Components
+
+- ESP32, Limit Switch, 5V Relay, Motor
 
 ### Output
 
